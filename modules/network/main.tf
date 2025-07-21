@@ -2,7 +2,7 @@
 
 # VPC
 resource "google_compute_network" "vpc_network" {
-    name = var.network_name
+    name = "huy-vpc"
     project = var.project_id
     auto_create_subnetworks = false // why?
 }

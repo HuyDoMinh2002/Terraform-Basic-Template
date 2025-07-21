@@ -44,7 +44,6 @@ resource "github_repository" "front-end" {
 # Network Link
 module "network" {
   source             = "./modules/network"
-  network_name       = var.network_name
   project_id         = var.project_id
   gcp_project_region = var.gcp_project_region
 }

@@ -24,6 +24,7 @@ variable "gcp_project_zone" {
 variable "gcp_credentials_file" {
   description = "Path to the GCP service account key file"
   type        = string
+  sensitive = true
 }
 
 variable "project_id" {
@@ -32,8 +33,4 @@ variable "project_id" {
 }
 
 # Network Variable
-variable "network_name" {
-  description = "Name of the VPC network"
-  type        = string
-}
 
