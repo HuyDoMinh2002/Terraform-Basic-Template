@@ -4,7 +4,7 @@
 resource "google_compute_network" "vpc_network" {
     name = "huy-vpc"
     project = var.project_id
-    auto_create_subnetworks = false // why?
+    auto_create_subnetworks = false # to turn off the default setting
 }
 
 # Subnets
@@ -29,5 +29,5 @@ resource "google_compute_firewall" "allow-inbound-common" {
   }
 
   source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["ssh", "web"]
+  target_tags   = ["ssh", "web"] # Any instances that have this tag will get apply this rule
 }

@@ -1,4 +1,4 @@
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "huy_instance" {
   name         = "huy-instance"
   machine_type = "e2-micro"
   zone         = "us-central1-a"

@@ -24,7 +24,7 @@ variable "gcp_project_zone" {
 variable "gcp_credentials_file" {
   description = "Path to the GCP service account key file"
   type        = string
-  sensitive = true
+  sensitive   = true
 }
 
 variable "project_id" {
